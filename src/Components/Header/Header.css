@@ -1,0 +1,19 @@
+.nav-style {
+    background-color: rgb(244, 212, 170);
+
+}
+
+.nav-text {
+    color: brown;
+    font-weight: 700;
+}
+
+.text-style {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: rgb(95, 175, 177);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
