@@ -1,10 +1,10 @@
 .nav-style {
-    background-color: rgb(244, 212, 170);
-
+    background-color: #116466;
+    font-weight: 700;
 }
 
 .nav-text {
-    color: brown;
+    color: rgb(233, 244, 240);
     font-weight: 700;
 }
 

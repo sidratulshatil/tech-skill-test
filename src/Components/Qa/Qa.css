@@ -1,8 +1,13 @@
 .qa-div {
     border: 1px solid gray;
+    border-radius: 15px;
+    background-color: aliceblue;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 20px;
+    padding: 12px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .input-div {
@@ -11,5 +16,8 @@
 }
 
 .bg-input {
-    background-color: rgb(36, 188, 188);
+    background-color: rgb(209, 228, 245);
+    margin: 2px;
+    padding: 3px;
+    border-radius: 5px;
 }

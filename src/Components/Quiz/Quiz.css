@@ -4,4 +4,7 @@
 
 .bg {
     margin: auto;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }

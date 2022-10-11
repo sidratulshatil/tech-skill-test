@@ -1,8 +1,18 @@
 .quizs {
+    margin-bottom: 50px;
+    padding: 10px;
 
-    padding: 5px;
-    background-color: rgb(244, 196, 179);
     justify-content: space-between;
+}
+
+
+h2 {
+    font-weight: 700;
+    color: rgb(4, 98, 4);
+}
+
+p {
+    color: rgb(33, 130, 33);
 }
 
 @media only screen and (max-width: 700px) {

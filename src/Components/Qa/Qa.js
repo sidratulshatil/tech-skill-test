@@ -36,10 +36,10 @@ const Qa = ({ a }) => {
             <h4 onClick={() => CorrectAnswer()} className='text-end me-2'><HiEye /></h4>
             <div className='input-div'>
 
-                <div> <input className='bg-input' onClick={() => FindAnswer(options[0])} type="radio" value={options[0]} name={id} />{options[0]}</div>
-                <div><input type="radio" onClick={() => FindAnswer(options[1])} value={options[1]} name={id} /> {options[1]}</div>
-                <div><input type="radio" onClick={() => FindAnswer(options[2])} value={options[2]} name={id} /> {options[2]}</div>
-                <div><input type="radio" onClick={() => FindAnswer(options[3])} value={options[3]} name={id} /> {options[3]}</div>
+                <div className='bg-input'> <input onClick={() => FindAnswer(options[0])} type="radio" value={options[0]} name={id} />{options[0]}</div>
+                <div className='bg-input'><input type="radio" onClick={() => FindAnswer(options[1])} value={options[1]} name={id} /> {options[1]}</div>
+                <div className='bg-input'><input type="radio" onClick={() => FindAnswer(options[2])} value={options[2]} name={id} /> {options[2]}</div>
+                <div className='bg-input'><input type="radio" onClick={() => FindAnswer(options[3])} value={options[3]} name={id} /> {options[3]}</div>
             </div>
             <ToastContainer />
         </div>

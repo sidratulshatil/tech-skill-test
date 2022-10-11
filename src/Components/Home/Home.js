@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <div>
-            <h2 className='mt-5'>Take the Free Practice Test</h2>
+            <h2 className='mt-5 '>Take the Free Practice Test</h2>
             <p>By Click on '<strong>Take Quizes</strong>' Button you can answer some questions on mentioned topic,and it's totaly free!!  </p>
             <div className='quizs d-flex flex-lg-row flex-sm-column '>
                 {
