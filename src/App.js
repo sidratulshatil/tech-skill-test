@@ -11,12 +11,20 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/', element: <Main></Main>, children: [
-        { path: '/', element: <Home></Home> },
+        {
+          path: '/',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
+          element: <Home></Home>
+        },
         { path: 'blog', element: <Blog></Blog> },
         { path: 'statistic', element: <Statistic></Statistic> },
-        { path: '*', element: <Error></Error> },
-      ]
-    }
+
+      ],
+
+    },
+    { path: '*', element: <Error></Error> },
   ])
 
 
