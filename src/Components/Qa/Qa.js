@@ -2,12 +2,17 @@ import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Qa.css'
+
+import { HiEye } from "react-icons/hi";
+
+
 const Qa = ({ a }) => {
     const { question, options, id, correctAnswer } = a
     // console.log(options)
     const notify = () => toast("Correct Answer!!", { position: 'top-center' })
     const notify2 = () => toast("Wrong Anwer!!", { position: 'top-center' })
-    console.log(correctAnswer)
+    const notify3 = () => toast(`Correct Answer:  ${correctAnswer}`, { position: 'top-center' })
+    // console.log(correctAnswer)
 
     const FindAnswer = (para) => {
         if (para === correctAnswer) {
@@ -20,12 +25,15 @@ const Qa = ({ a }) => {
 
     }
 
+    const CorrectAnswer = () => {
+        return notify3()
+    }
 
     return (
         <div className='qa-div'>
             <h4>{question}</h4>
-            <p>Correct ans:{correctAnswer}</p>
 
+            <h4 onClick={() => CorrectAnswer()} className='text-end me-2'><HiEye /></h4>
             <div className='input-div'>
 
                 <div> <input className='bg-input' onClick={() => FindAnswer(options[0])} type="radio" value={options[0]} name={id} />{options[0]}</div>

@@ -12,7 +12,7 @@ const Quizes = () => {
             <h2>Quizes Of:-{a.data.name}</h2>
 
             {
-                data.questions.map(a => <Qa a={a}></Qa>)
+                data.questions.map(a => <Qa key={a.id} a={a}></Qa>)
             }
         </div>
     );
