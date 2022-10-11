@@ -1,12 +1,18 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
-
+import { useNavigate } from 'react-router-dom';
+import './Quiz.css'
 
 const Quiz = ({ quiz }) => {
 
-    const { name, logo, total } = quiz
+    const { name, logo, total, id } = quiz
+
+    const navigate = useNavigate()
+    const handleNavigate = () => {
+        navigate(`/quizes/${id}`)
+    }
     return (
-        <div className='mt-5'>
+        <div className='mt-5 bg'>
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={logo} />
                 <Card.Body>
@@ -14,7 +20,7 @@ const Quiz = ({ quiz }) => {
                     <Card.Text>
                         <p>Total Quiz: {total}</p>
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button onClick={handleNavigate} variant="primary">Take Quizes</Button>
                 </Card.Body>
             </Card>
         </div>
